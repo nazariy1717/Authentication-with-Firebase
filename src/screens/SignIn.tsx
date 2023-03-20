@@ -16,7 +16,6 @@ export function SignIn() {
        const unsubscribe = onAuthStateChanged(auth, (user) => {
            console.log(user)
             if (user) {
-                console.log('dasd')
                 navigation.navigate('Home');
             }
         });
